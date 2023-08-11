@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fabrication Work Services</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="service">
+        <h3>Custom Metal Fabrication</h3>
+        <p>We offer custom metal fabrication services for various applications.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sapien ac purus eleifend, a feugiat ligula rhoncus. Quisque sed lectus mauris.</p>
+      </div>
+      <div class="service">
+        <h3>Welding and Fabrication</h3>
+        <p>Our skilled welders provide professional welding and fabrication services.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sapien ac purus eleifend, a feugiat ligula rhoncus. Quisque sed lectus mauris.</p>
+      </div>
+      <div class="service">
+        <h3>Sheet Metal Fabrication</h3>
+        <p>We specialize in sheet metal fabrication and can handle projects of all sizes.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sapien ac purus eleifend, a feugiat ligula rhoncus. Quisque sed lectus mauris.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Fabrication Work Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fabrication Work Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: black;
+      overflow: hidden;
+      z-index: 999;
+    }
+    
+    .navbar a {
+      float: right;
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .navbar a:hover {
+      background-color: #8b0000; /* Dark red */
+    }
+    
+    .navbar a.active {
+    
+    }
+    
+    header {
+      background-color: transparent;
+      color: #fff;
+    }
+    
+    main {
+      margin-top: 60px; /* Add space for the fixed navbar */
+      padding: 20px;
+       background-image: url(images/bg-img1.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+    }
+    
+    h1, h3, h4, h5, h6 {
+      font-family: "Raleway", sans-serif;
+      color: #fff;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    
+    h2 {
+      color: orangered;
+    }
+    
+    p {
+      color: #0e0a0a;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    
+    .container {
+      background-color: transparent;
+      padding: 30px;
+      box-shadow: none;
+    }
+    
+    .card {
+      background-color: rgba(247, 243, 243, 0.7);
+      padding: 20px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
+      background-color: rgba(60, 52, 52, 0.9);
+    }
+    
+    .btn-primary {
+      background-color: orangered;
+      border-color: orangered;
+    }
+    
+    .btn-primary:hover {
+      background-color: #ff5e14;
+      border-color: #ff5e14;
+    }
+    
+    .footer {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+     
+      bottom: 0;
+      width: 100%;
+    }
+    
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .fade-in {
+  animation-name: fade-in;
+  animation-duration: 2s; /* Increase the duration to 2 seconds */
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(50px); /* Adjust the initial position */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Adjust the final position */
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar navbar-expand-lg">
+      
+      <a class="active" href="#">Home</a>
+      <a class="nav-link" href="#page-2" data-page="2">Services</a>
+      <a class="nav-link" href="#page-3" data-page="3">product</a>
+      <a class="nav-link" href="#page-4" data-page="4">Contact</a>
+      <a class="nav-link" href="#page-5" data-page="5">About</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="divider"></div>
+    <div class="page" id="page-1">
+      <section class="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div style="margin-top: 30%;" class="fade-in">
+                <h1 style="color:orangered;">Welcome to SHIVSHAMBHO FABRICATION Workshop & Hardware</h1>
+                <h5 style="color: red;">We offer high-quality fabrication services for various industries and also provide hardware materials.</h5>
+                <a href="#page-2" class="btn btn-primary">Explore More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <div class="page" id="page-2">
+    <div class="container">
+      <h1 style="color: #fff;">hh</h1>
+      <h1 style="color: black;"> <center>Services</center></h1>
+      <center>We offer high-quality fabrication services for various industries and also provide hardware materials.</center>
+      <br>
+      <br>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <h2>Metal <br>Fabrication</h2>
+            <img src="images/m1.jpeg" alt="">
+            <p>Our metal fabrication services encompass the cutting, shaping, and assembling of various metals to create functional and aesthetically pleasing products...</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <h2>Industrial Equipment Modification</h2>
+            <img src="images/m2.jpeg" alt="">
+            <p>We offer modification and customization services for industrial equipment, helping you optimize your machinery to meet specific operational requirements...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card">
+            <h2>Welding</h2>
+            <img src="images/m3.jpeg" alt="">
+            <p>We specialize in various welding techniques, ensuring strong and durable connections for your projects. We provide all services for the welding works...</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <h2>Custom Manufacturing</h2>
+            <img src="images/m4.jpeg" alt="">
+            <p>If you have a unique idea or specific requirements for a product, our custom manufacturing service is tailored to meet your needs...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <h2>Structural Steel Fabrication</h2>
+            <img src="images/m5.jpeg" alt="">
+            <p>For projects that require structural steel components, we provide comprehensive fabrication services... We will provide better services for you..................!</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <h2>Installation and On-Site Services</h2>
+            <img src="images/m6.jpeg" alt="">
+            <p>Our services extend beyond fabrication. We offer professional installation and on-site support to ensure a seamless transition from production to implementation...</p>
+          </div>
+        </div>
+      </div>
+      <section id="cta" class="cta">
+        <div class="container">
+          <div class="text-center">
+            <h3>Call To Action</h3>
+            <p>Make Your instruments With ShivShambho Fabrication Work.</p>
+            <a href="tel:+919545534767" class="btn btn-primary">Call to Action</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="page" id="page-3">
+      <section>
+      <div class="container">
+        <h1 style="color: #fff;">hh</h1>
+        <h1 style="color: black;"> <center>OUR PRODUCTS</center></h1>
+       
+          <div class="container-fluid">
+              <div class="row mt-3">
+                <div class="col-md-3">
+                  <div class="card shadow-lg bg-secondary text-light m-2">
+                      <div class="card-body">
+                          <img src="images/download (1) (1).jpeg" alt="" width="100%"
+                              class="card-img-top">
+                          <h6 class="card-title"></h6>
+                          <p class="card-text"></p>
+                         
+                      </div>
+                  </div>
+              </div>
+                 
+                  <div class="col-md-3">
+                      <div class="card shadow-lg bg-secondary text-light m-2">
+                          <div class="card-body">
+                              <img src="images/download (4) (1).jpeg" alt="" width="100%"
+                                  class="card-img-top">
+                              <h6 class="card-title"></h6>
+                              <p class="card-text"></p>
+                             
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="card shadow-lg bg-secondary text-light m-2">
+                          <div class="card-body">
+                              <img src="images/download (5) (1).jpeg" alt="" width="100%"
+                                  class="card-img-top">
+                              <h6 class="card-title"></h6>
+                              <p class="card-text"></p>
+                             
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="card shadow-lg bg-secondary text-light m-2">
+                          <div class="card-body">
+                              <img src="images/download (6) (1).jpeg" alt="" width="100%"
+                                  class="card-img-top">
+                              <h6 class="card-title"></h6>
+                              <p class="card-text"></p>
+                             
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="card shadow-lg bg-secondary text-light m-2">
+                          <div class="card-body">
+                              <img src="images/Edwardmetaldiningtable1.png" alt="" width="100%"
+                                  class="card-img-top">
+                              <h6 class="card-title"></h6>
+                              <p class="card-text"></p>
+                             
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="card shadow-lg bg-secondary text-light m-2">
+                          <div class="card-body">
+                              <img src="images/i2.png" alt="" width="100%"
+                                  class="card-img-top">
+                              <h6 class="card-title"></h6>
+                              <p class="card-text"></p>
+                             
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="card shadow-lg bg-secondary text-light m-2">
+                          <div class="card-body">
+                              <img src="images/images (12).jpeg" alt="" width="100%"
+                                  class="card-img-top">
+                              <h6 class="card-title"></h6>
+                              <p class="card-text"></p>
+                              
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="card shadow-lg bg-secondary text-light m-2">
+                          <div class="card-body">
+                              <img src="images/images (16).jpeg" alt="" width="100%"
+                                  class="card-img-top">
+                              <h6 class="card-title"></h6>
+                              <p class="card-text"></p>
+                              
+                          </div>
+                      </div>
+                  </div>
+      
+                  <p style="text-align: left;">          click <a href="https://www.flipkart.com/search?q=welding+machine&sid=h1m%2Chww%2Cslm%2Clyc&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_13_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_13_na_na_na&as-pos=1&as-type=RECENT&suggestionId=welding+machine%7CWelding+Machines&requestId=14d9153e-7748-47ee-9b91-9ebc2ef2f3ec&as-searchtext=welding%20machi">here </a> to view more product on other websites</p>
+              </div>
+          </div>
+          </div>
+          
+          
+        </section>
+      </div>
+      </div>
+      <div class="page" id="page-4">
+        <div class="container">
+          <h1 style="color: #fff;">hh</h1>
+          <h1 style="color: black;"> <center>CONTACT</center></h1>
+          <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Workshop Name:</strong> ShivShambho Welding Workshop<br>
+        <strong>Address:</strong> Sawrgoan , Yeola Dist- Nashik<br>
+          <strong>Phone:</strong> 9511261654<br>
+              <strong>Email:</strong> surajgore387@gmail.com<br>
+            <strong>location:</strong> <a href="https://www.google.com/maps/place/20%C2%B006'23.4%22N+74%C2%B027'31.7%22E/@20.106509,74.4562321,17z/data=!3m1!4b1!4m4!3m3!8m2!3d20.106509!4d74.458807?entry=ttu" class="btn btn-primary">view on google map</a></p>
+          </div>
+        </div>
+</div></div>    
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>Contact Form</h2>
+    <form id="contactForm" method="POST" action="send_message.php">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="whatsapp">WhatsApp Number:</label>
+        <input type="text" class="form-control" id="whatsapp" name="whatsapp" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </div>
+</section>
+  <!-- Rest of the code -->
+  
+  <div class="page" id="page-5">
+    <h1>gg</h1>
+    <section id="developers" class="developers">
+      <div class="container">
+        <h2>Our Developers</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="images/d6.jpeg" alt="Developer 1" class="img-fluid">
+              <div class="card-body">
+                <h5 style="color: #0e0a0a;" class="card-title">Mr. Karan Gore     
+                </h5>
+                <p class="card-text"><a href="tel:+919545534767" class="btn btn-primary">Call to Action</a></p>
+                <ul class="list-inline">
+                  <li class="list-inline-item"> <a href="https://www.instagram.com/mr_karan_96k" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram" style="color: #8b0000;">instagram</i>
+                  </a></li>
+               
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="images/d1.jpeg" alt="Developer 2" class="img-fluid">
+              <div class="card-body">
+                <h5 style="color: #0e0a0a;" class="card-title">Mr. Anand Jadhav</h5>
+                <p class="card-text"><a href="tel:+919421563754" class="btn btn-primary">Call to Action</a></p>
+                <ul class="list-inline">
+                  <li class="list-inline-item"> <a href="https://www.instagram.com/bhaiya_jadhav_dj_king" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram" style="color: #8b0000;">instagram</i>
+                  </a></li>
+               
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="images/d7.jpeg" alt="Developer 3" class="img-fluid">
+              <div class="card-body">
+                <h5 style="color: #0e0a0a;" class="card-title">Mr. Prasad Udawant</h5>
+                <p class="card-text"><a href="tel:+917057815900" class="btn btn-primary">Call to Action</a></p>
+                <ul class="list-inline">
+                  <li class="list-inline-item"> <a href="https://www.instagram.com/mr_karan_96k" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram" style="color: #8b0000;">instagram</i>
+                  </a></li>
+               
+                </ul>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+      <div class="container">
+        <h2>Guided By </h2>
+        <div class="row">
+      
+          <div class="col-lg-4 offset-4">
+            <div class="card">
+              <img src="images/p1.png" alt="Developer 2" class="img-fluid">
+              <div class="card-body">
+                <h5 style="color: #0e0a0a;" class="card-title">Mr. Aaquib Shaikh</h5>
+                <p class="card-text">Founder of <a href="https://cyphersasoftware.com/">Cyphersa</a> Software LLP<br>
+                  .NET and Android Developer<br><a href="tel:+918999206410" class="btn btn-primary">Call to Action</a></p>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="https://www.linkedin.com/janesmith" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.github.com/janesmith" target="_blank"><i class="fab fa-github"></i></a></li>
+                  <li class="list-inline-item"><a href="mailto:cyphersasoftwares@gmail.com"><i class="far fa-envelope"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+  </div>
+  </div>
+    </section>
+    
+    </div>
+  <footer class="footer bg-dark text-white" style="width: 100%";>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 mx-auto text-center">
+          <ul class="list-inline mb-3">
+            <li class="list-inline-item"><a href="#page-1">Home</a></li>
+            <li class="list-inline-item"><a href="#page-2">Services</a></li>
+            <li class="list-inline-item"><a href="#page-3">Gallery</a></li>
+            <li class="list-inline-item"><a href="#page-4">Contact</a></li>
+            <li class="list-inline-item"><a href="#page-5">About</a></li>
+          </ul>
+          <a href="https://www.instagram.com/mr_karan_96k" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram" style="color: #8b0000;"></i>
+          </a>
+          <p class="mb-0">&copy; 2023 ShivShambho Fabrication Workshop & Hardware. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+     
+      $(".navbar").show();
+  
+     
+      $("a.nav-link").on("click", function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $("html, body").animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+            window.location.hash = hash;
+          });
+        }
+      });
+  
+   
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+          $(".navbar").addClass("sticky");
+        } else {
+          $(".navbar").removeClass("sticky");
+        }
+      });
+  
+     
+      $("#contactForm").submit(function (event) {
+        event.preventDefault();
+        var name = $("#name").val();
+        var email = $("#email").val();
+        var whatsapp = $("#whatsapp").val();
+        var message = $("#message").val();
+        var whatsappMessage = "Name: " + name + "%0aEmail: " + email + "%0aWhatsApp: " + whatsapp + "%0aMessage: " + message;
+        var whatsappLink = "https://api.whatsapp.com/send?phone=919545534767&text=" + encodeURIComponent(whatsappMessage);
+        window.open(whatsappLink);
+      });
+    });
+  
+  $(document).ready(function() {
+    $('.fade-in').addClass('fade-in-animation');
+  });
+
+
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </body>
+  </html>
